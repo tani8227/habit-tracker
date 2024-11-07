@@ -16,7 +16,7 @@ function App()
 
     },
     {
-      path:'/trackHabit',
+      path:'trackHabit',
       children:
       [
         {
