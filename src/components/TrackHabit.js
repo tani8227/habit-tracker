@@ -61,7 +61,7 @@ export default function TrackHabit() {
 
 
 
-
+console.log(weeklyHabit);
 
     return (
         <>
@@ -103,7 +103,7 @@ export default function TrackHabit() {
                                         width: '100px',
                                         boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
                                     }}>
-                                        <span style={{ fontSize: '16px', fontWeight: 'bold', color: '#333' }}>{`Day ${item.date}`}</span>
+                                        <span style={{ fontSize: '16px', fontWeight: 'bold', color: '#333' }}>{`Day ${index+1}`}</span>
                                         <span style={{ fontSize: '14px', color: '#555', marginBottom: '10px' }}>{item.status}</span>
                                         <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                                             <select name="status" style={{

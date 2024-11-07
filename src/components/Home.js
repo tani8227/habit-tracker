@@ -39,7 +39,7 @@ export const Home = () => {
             key: '',
             count: Array(7).fill().map((_, i) => ({
                 status: 'None',
-                date: new Date().getDay() + i,
+                date: new Date().getDate() + i,
             })),
         });
     }
@@ -52,12 +52,13 @@ export const Home = () => {
             [name]: value,
         }));
     }
+
 // handling the habit deletion
     function handleDelete(id) {
         const updatedList = habitList.filter((ele) => ele.key !== id);
         setHabitList(updatedList);
     }
-
+    
     return (
         <>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', backgroundColor: '#81C784', padding: 3 }}>
